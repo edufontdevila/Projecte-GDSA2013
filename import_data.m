@@ -56,6 +56,19 @@ id = M {1}(2:L);
 class = M {2}(2:L);
 
 
+
 data_map = containers.Map(id,class);
 
-clear data id L M class;
+clear data L M fid;
+
+%% TRAINING
+
+msize = numel(id);
+id4train = cell(round(msize/2));
+id4class = id4train;
+
+id4train = id(1:2:msize-1);
+class4train = class(1:2:msize-1);
+id4class = id(2:2:msize);
+
+clear msize id class;

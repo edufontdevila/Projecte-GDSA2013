@@ -15,7 +15,7 @@ function C = num2class (num)
         case 7
             C = 'theater_dance';   
         case -1
-            C = 'other'   ; 
+            C = 'non_event'   ; 
   
     end
     C = cellstr(C);
