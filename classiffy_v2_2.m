@@ -54,7 +54,7 @@ T5 = unique(T5);
 T6 = unique(T6);
 T7 = unique(T7);
 clear E;
-%% MAPA TAGS-CLASSE d(ò.Ó)b
+%% MAPA TAGS-CLASSE
 
 %KeySet = unique([T1, T2, T3, T4, T5, T6, T7]);
 c1 = ones(1, length(T1));
@@ -194,3 +194,11 @@ Class = knnclassify(id_classed, id_classed_train, class4train, 15);
 
 OUT = [id4class Class];
 clear Translated class tags L l i c TAG;
+%%
+%%ESCRIPTURA FITXER RESULTATS
+fid = fopen('resultats.txt', 'w');
+for i = 1:size(OUT,1)
+    fprintf(fid,repmat('%s \b',1,size(OUT,2)-1), OUT{i,1:end-1});
+    fprintf(fid,'%s\n',OUT{i,end});
+end
+fclose(fid);
