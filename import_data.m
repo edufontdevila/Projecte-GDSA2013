@@ -1,4 +1,14 @@
-%%%%%%%%%%LECTURA DADES
+%%
+% Copyright (c) 2013 Víctor Castaño, Yann de Couëssin, Xavier Figueras,
+% Eduard Fontdevila
+%
+% MIT License
+%
+% For more information read the 'LICENSE.txt' file
+%------------------------------------------------------------------------
+
+%%
+%%LECTURA DADES
 %LECTURA TAGS
 
 close all

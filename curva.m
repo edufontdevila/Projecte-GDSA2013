@@ -1,3 +1,13 @@
+%%
+% Copyright (c) 2013 Víctor Castaño, Yann de Couëssin, Xavier Figueras,
+% Eduard Fontdevila
+%
+% MIT License
+%
+% For more information read the 'LICENSE.txt' file
+%------------------------------------------------------------------------
+
+%%
 PREREC = zeros(20,2);
 for w = 1 :20
 

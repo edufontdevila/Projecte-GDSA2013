@@ -1,3 +1,13 @@
+%%
+% Copyright (c) 2013 Víctor Castaño, Yann de Couëssin, Xavier Figueras,
+% Eduard Fontdevila
+%
+% MIT License
+%
+% For more information read the 'LICENSE.txt' file
+%------------------------------------------------------------------------
+
+%%
 function [v] = tagstovector (tags)
     n = find(tags < char (33)) ;
     L= length(n);

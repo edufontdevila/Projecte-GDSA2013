@@ -1,3 +1,14 @@
+%%
+% Copyright (c) 2013 Víctor Castaño, Yann de Couëssin, Xavier Figueras,
+% Eduard Fontdevila
+%
+% MIT License
+%
+% For more information read the 'LICENSE.txt' file
+%------------------------------------------------------------------------
+
+%%
+
 function UCCM = tptn (MCCM, class_num)
 %   UCCM = unic class confusion matrix [2,2]
 %   MCCM = multi class confusion matrix

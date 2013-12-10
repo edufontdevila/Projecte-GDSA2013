@@ -1,3 +1,13 @@
+%%
+% Copyright (c) 2013 Víctor Castaño, Yann de Couëssin, Xavier Figueras,
+% Eduard Fontdevila
+%
+% MIT License
+%
+% For more information read the 'LICENSE.txt' file
+%------------------------------------------------------------------------
+
+%%
 function [P, R, TN, ACC] = prenrec (conf_matrix)
     tp = conf_matrix(1,1);
     fp = conf_matrix(2,1);

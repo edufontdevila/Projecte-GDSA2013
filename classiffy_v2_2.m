@@ -1,3 +1,12 @@
+%%
+% Copyright (c) 2013 Víctor Castaño, Yann de Couëssin, Xavier Figueras,
+% Eduard Fontdevila
+%
+% MIT License
+%
+% For more information read the 'LICENSE.txt' file
+%------------------------------------------------------------------------
+
 %% VECTORS CLASS TAG 
 % ENTRENAMENT
 T1= '';
