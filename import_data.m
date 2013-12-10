@@ -17,7 +17,7 @@ tag=cell(l,1);
 Id = tag;
 ref = char(C{1}(2));
 stri= '';
-for i=1:L-1
+for i=1:L-1                 % map key: id_photo data: tags
     len = length(char(C{1}(i+1)));
     if len == length (ref)
         if sum (char(C{1}(i+1))== ref) == len 
@@ -57,7 +57,7 @@ class = M {2}(2:L);
 
 
 
-data_map = containers.Map(id,class);
+data_map = containers.Map(id,class);    %map key: id_photo data: class
 
 clear data L M fid;
 
@@ -70,5 +70,6 @@ id4class = id4train;
 id4train = id(1:2:msize-1);
 class4train = class(1:2:msize-1);
 id4class = id(2:2:msize);
+class4class = class(2:2:msize);
 
 clear msize id class;
