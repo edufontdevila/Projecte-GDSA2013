@@ -1,0 +1,31 @@
+
+PROJECT DESCRIPTION:
+
+Project corresponding to the course "Audiovisual Signals Management and Distribution", taught at the Polytechnic University of Catalonia (UPC) during the 2013-2014 academic term.
+
+The goal for this project is to implement a social event classifier. It means, given an images set, divide them automatically in different classes (events) previously defined.
+Our work team has used the metadata information of each image to manage this task in order to reach the main goal.
+
+
+
+---------
+
+DESCRIPCIÓN DEL PROYECTO:
+
+Proyecto correspondiente a la asignatura "Gestión y Distribución de Señales Audiovisuales", cursada en la Universidad Politécnica de Cataluña (UPC) durante el curso lectivo 2013-2014.
+
+El objetivo de este proyecto es implementar un clasificador de eventos sociales. Eso significa que, dado un conjunto de imágenes, separarlas automáticamente en distintas clases (eventos) definidas previamente.
+Nuestro grupo de trabajo ha utilizado la información contenida en los metadatos de cada imagen para realizar esa tarea y alcanzar el objetivo principal.
+
+
+
+---------
+
+DESCRIPCIÓ DEL PROJECTE:
+
+Projecte corresponent a l'assignatura "Gestió i Distribució de Senyals Audiovisuals", cursada a la Universitat Politècnica de Catalunya (UPC) durant el curs lectiu 2013-2014.
+
+L'objectiu d'aquest projecte és implementar un classificador d'esdeveniments socials. Això és, donat un conjunt d'imatges, separar-les automàticament en diverses classes (esdeveniments) definides prèviament.
+El nostre grup de treball ha utilitzat la informació continguda en les metadades de cada imatge per portar a terme aquesta tasca i assolir l'objectiu principal.
+
+
