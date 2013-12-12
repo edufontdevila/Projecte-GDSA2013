@@ -1,21 +1,14 @@
-%%
-% Copyright (c) 2013 Víctor Castaño, Yann de Couëssin, Xavier Figueras,
-% Eduard Fontdevila
-%
-% MIT License
-%
-% For more information read the 'LICENSE.txt' file
-%------------------------------------------------------------------------
-
 %% VECTORS CLASS TAG 
 % ENTRENAMENT
-T1= '';
+T1= ' ';
 T2=T1;
 T3=T1;
 T4=T1;
 T5=T1;
 T6=T1;
 T7=T1;
+T8=T7;
+T9=T7;
 x = 0;
 L = length(id4train);
 
@@ -45,6 +38,10 @@ for i = 1 : L   %Lectrura tags per entrenament
 
             case 7 
                 T7 = [T7 T];
+            case 8
+                T8 = [T8 T];
+            case 9 
+                T9 = [T9 T];
         end
     else
      warning('Unknown photo' );
@@ -62,6 +59,20 @@ Tu4 = unique(T4);
 Tu5 = unique(T5);
 Tu6 = unique(T6);
 Tu7 = unique(T7);
+Tu8 = unique(T8);
+Tu9 = unique(T9);
+if size(Tu1) == 1; Tu1='.'; end;
+if size(Tu2) == 1; Tu2='.'; end;
+if size(Tu3) == 1; Tu3='.'; end;
+if size(Tu4) == 1; Tu4='.'; end;
+if size(Tu5) == 1; Tu5='.'; end;
+if size(Tu6) == 1; Tu6='.'; end;
+if size(Tu7) == 1; Tu7='.'; end;
+if size(Tu8) == 1; Tu8='.'; end;
+if size(Tu9) == 1; Tu9='.'; end;
+
+                    
+
 clear E;
 %% MAPA TAGS-CLASSE d(ò.Ó)b
 
@@ -73,7 +84,8 @@ f4 = tfrec(Tu4,T4);
 f5 = tfrec(Tu5,T5);
 f6 = tfrec(Tu6,T6);
 f7 = tfrec(Tu7,T7);
-
+f8 = tfrec(Tu8,T8);
+f9 = tfrec(Tu9,T9);
 
 %ValueSet = [c1 c2 c3 c4 c5 c6 c7];
 
@@ -85,12 +97,15 @@ map_TC4 = containers.Map(Tu4, f4);
 map_TC5 = containers.Map(Tu5, f5);
 map_TC6 = containers.Map(Tu6, f6);
 map_TC7 = containers.Map(Tu7, f7);
+map_TC8 = containers.Map(Tu8, f8);
+map_TC9 = containers.Map(Tu9, f9);
 
-clear KeySet ValueSet c1 c2 c3 c4 c5 c6 c7;
+clear KeySet ValueSet f1 f2 f3 f4 f5 f6 f7;
+
 clear  T1 T2 T3 T4 T5 T6 T7 x C T Tu1 Tu2 Tu3 Tu4 Tu5 Tu6 Tu7;
 %% VECTOR DE CLASSES I ASSIGNACIÓ DADES CLASS
 L = length(id4class);
-id_classed = zeros(L,7);
+id_classed = zeros(L,9);
 
 
 if L>0
@@ -129,6 +144,14 @@ for i = 1:L;    %sumatori puntuacions per classe
                 c = 7;
                 id_classed(i,c) = id_classed(i,c) + map_TC7 (TAG);
             end
+            if isKey ( map_TC8, TAG)
+                c = 8;
+                id_classed(i,c) = id_classed(i,c) + map_TC8 (TAG);
+            end
+            if isKey ( map_TC9, TAG)
+                c = 9;
+                id_classed(i,c) = id_classed(i,c) + map_TC9 (TAG);
+            end
         end
     end
     end
@@ -140,7 +163,7 @@ end
 %% VECTOR DE CLASSES I ASSIGNACIÓ DADES TRAIN
 
 L = length(id4train);
-id_classed_train = zeros(L,7);
+id_classed_train = zeros(L,9);
 
 Class = zeros (L,1);
 if L>0
@@ -178,6 +201,14 @@ for i = 1:L;
             if isKey ( map_TC7, TAG)
                 c = 7;
                 id_classed_train(i,c) = id_classed_train(i,c) + map_TC7 (TAG);
+            end
+            if isKey ( map_TC8, TAG)
+                c = 8;
+                id_classed_train(i,c) = id_classed_train(i,c) + map_TC8 (TAG);
+            end
+            if isKey ( map_TC9, TAG)
+                c = 9;
+                id_classed_train(i,c) = id_classed_train(i,c) + map_TC9 (TAG);
             end
         end
     end

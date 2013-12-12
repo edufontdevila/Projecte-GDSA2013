@@ -1,13 +1,3 @@
-%%
-% Copyright (c) 2013 Víctor Castaño, Yann de Couëssin, Xavier Figueras,
-% Eduard Fontdevila
-%
-% MIT License
-%
-% For more information read the 'LICENSE.txt' file
-%------------------------------------------------------------------------
-
-%%
 function [prec, tpr, fpr, thresh] = prec_rec(score, target, varargin)
 % PREC_REC - Compute and plot precision/recall and ROC curves.
 %

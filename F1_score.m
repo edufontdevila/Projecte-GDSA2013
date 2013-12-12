@@ -1,13 +1,7 @@
-%%
-% Copyright (c) 2013 Víctor Castaño, Yann de Couëssin, Xavier Figueras,
-% Eduard Fontdevila
-%
-% MIT License
-%
-% For more information read the 'LICENSE.txt' file
-%------------------------------------------------------------------------
-
-%%
 function F = F1_score(P, R)
-    F = 2*(P*R/(P+R));
+    if (P+R) == 0
+        F = 0;
+    else
+        F = 2*(P*R/(P+R));
+    end
 end

@@ -1,14 +1,3 @@
-%%
-% Copyright (c) 2013 Víctor Castaño, Yann de Couëssin, Xavier Figueras,
-% Eduard Fontdevila
-%
-% MIT License
-%
-% For more information read the 'LICENSE.txt' file
-%------------------------------------------------------------------------
-
-%%
-
 function C = num2class (num)
     switch num
         case 1          %Class 1
@@ -24,7 +13,11 @@ function C = num2class (num)
         case 6
             C = 'exhibition';
         case 7
-            C = 'theater_dance';   
+            C = 'theater_dance';
+        case 8
+            C = 'fashion';
+        case 9
+            C = 'protest';
         case -1
             C = 'non_event'   ; 
   

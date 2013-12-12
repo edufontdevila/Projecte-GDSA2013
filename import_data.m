@@ -1,14 +1,4 @@
-%%
-% Copyright (c) 2013 Víctor Castaño, Yann de Couëssin, Xavier Figueras,
-% Eduard Fontdevila
-%
-% MIT License
-%
-% For more information read the 'LICENSE.txt' file
-%------------------------------------------------------------------------
-
-%%
-%%LECTURA DADES
+%%%%%%%%%%LECTURA DADES
 %LECTURA TAGS
 
 close all
@@ -55,6 +45,7 @@ end
 
 
 map_tag = containers.Map(Id,tag);
+%%
 clear Id tag C stri len ref i l fid k;
 %% LECTURA CLASSES
 
@@ -72,14 +63,14 @@ data_map = containers.Map(id,class);    %map key: id_photo data: class
 clear data L M fid;
 
 %% TRAINING
+%
+%msize = numel(id);
+%id4train = cell(round(msize/2));
+%id4class = id4train;
 
-msize = numel(id);
-id4train = cell(round(msize/2));
-id4class = id4train;
-
-id4train = id(1:2:msize-1);
-class4train = class(1:2:msize-1);
-id4class = id(2:2:msize);
-class4class = class(2:2:msize);
+%id4train = id(1:2:msize-1);
+%class4train = class(1:2:msize-1);
+%id4class = id(2:2:msize);
+%class4class = class(2:2:msize);
 
 clear msize id class;
