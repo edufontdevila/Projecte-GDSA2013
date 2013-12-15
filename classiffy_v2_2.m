@@ -217,7 +217,7 @@ end
 end
 %% KNN CLASSIFICACIO
 Class2 = Class;
-Class = knnclassify(id_classed, id_classed_train, class4train, 3);
+Class = knnclassify(id_classed, id_classed_train, class4train, 1);
 
 
 %%
@@ -229,7 +229,7 @@ OUT = [id4class Class];
 %%ESCRIPTURA FITXER RESULTATS
 fid = fopen('resultats.txt', 'w');
 for i = 1:size(OUT,1)
-    fprintf(fid,repmat('%s \b',1,size(OUT,2)-1), OUT{i,1:end-1});
+    fprintf(fid,repmat('%s ',1,size(OUT,2)-1), OUT{i,1:end-1});
     fprintf(fid,'%s\n',OUT{i,end});
 end
 fclose(fid);
